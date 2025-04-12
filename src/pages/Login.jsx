@@ -80,6 +80,7 @@ const Login = () => {
     try {;
       const response = await axios.post(`${API_URL}/api/users/login`, { email, mdp }, {
         withCredentials: true,
+        credentials: 'include', // très important avec CORS
         headers: {
           'Content-Type': 'application/json',
           'Accept': 'application/json',
