@@ -31,12 +31,12 @@ export default defineConfig({
   server: {
     proxy: {
       '/socket.io': {
-        target: 'http://localhost:5000',
+        target: 'https://4kdesigns-mada.com',
         changeOrigin: true,
         ws: true,
       },
       '/api': {
-        target: 'http://localhost:5000',
+        target: 'https://4kdesigns-mada.com',
         changeOrigin: true,
       }
     }
