@@ -103,8 +103,8 @@ const Login = () => {
         navigate('/');
       }
     } catch (err) {
-      // setError(err.response?.data?.message || 'Erreur lors de la connexion.');
-      setError(err.response?.data?.message);
+      setError(err.response?.data?.message || 'Erreur lors de la connexion.');
+      // setError(err.response?.data?.message);
 // 
     } finally {
       setLoading(false);
